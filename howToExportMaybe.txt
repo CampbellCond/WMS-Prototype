@@ -1,0 +1,17 @@
+if (rowExists) {
+  if (this.state.Wyd === 'QCed') {
+    empName in row 4
+  }
+  if (this.state.Wyd === 'Pulled') {
+    empname in row 3
+  }
+} else {
+  put custName in row 1
+  put orderNum in row 2
+  if (this.state.Wyd === 'Pulled') {
+    empName in row 3
+  }
+  if (this.state.Wyd === 'QCed') {
+    empName in row 4
+  }
+}
