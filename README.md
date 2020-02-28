@@ -6,6 +6,6 @@ This is a demo app to make a simple WMS created using React.js
 
 ```bash
 npm i
-npm run build
+npm run-script build
 npm run start
 ```
