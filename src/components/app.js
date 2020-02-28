@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Home from './Home'
 import Inputs from './Inputs'
 import Export from './Export'
+import Search from './Search'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 
 const FullWrap = styled.div``
@@ -14,6 +15,8 @@ const HomeButton = styled.button``
 const InputsButton = styled.button``
 
 const ExportButton = styled.button``
+
+const SearchButton = styled.button``
 
 class App extends React.Component {
   render() {
@@ -36,6 +39,11 @@ class App extends React.Component {
               <span>Export</span>
             </ExportButton>
           </Link>
+          <Link to="/Search">
+            <SearchButton renderAs="button">
+              <span>Search</span>
+            </SearchButton>
+          </Link>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -45,6 +53,9 @@ class App extends React.Component {
             </Route>
             <Route path="/Export">
               <Export />
+            </Route>
+            <Route path="/Search">
+              <Search />
             </Route>
           </Switch>
         </Router>
