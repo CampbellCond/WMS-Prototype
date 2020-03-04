@@ -5,19 +5,19 @@ const SearchWrap = styled.div``
 
 const SearchMe = styled.h2``
 
-const DateSearch = styled.h2``
+const DateText = styled.h2``
 
 const DateInput = styled.input``
 
-const OrderNumSearch = styled.h2``
+const OrderNumText = styled.h2``
 
 const OrderNumInput = styled.input``
 
-const CustNameSearch = styled.h2``
+const CustNameText = styled.h2``
 
 const CustNameInput = styled.input``
 
-const SearchButt = styled.h2``
+const SearchText = styled.h2``
 
 const SearchButton = styled.button``
 
@@ -48,13 +48,13 @@ class Search extends React.Component {
     return (
       <SearchWrap>
         <SearchMe>Search by date, order number, customer name, or all three!</SearchMe>
-        <DateSearch>Date:</DateSearch>
+        <DateText>Date:</DateText>
         <DateInput onChange={this.handleDateInput} />
-        <OrderNumSearch>Order Number:</OrderNumSearch>
+        <OrderNumText>Order Number:</OrderNumText>
         <OrderNumInput onChange={this.handleOrderNumInput} />
-        <CustNameSearch>Customer Name:</CustNameSearch>
+        <CustNameText>Customer Name:</CustNameText>
         <CustNameInput onChange={this.handleCustNameInput} />
-        <SearchButt>Search!</SearchButt>
+        <SearchText>Search!</SearchText>
         <SearchButton onClick={this.handleSearch} />
       </SearchWrap>
     )
